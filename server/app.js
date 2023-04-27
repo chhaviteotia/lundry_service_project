@@ -7,7 +7,7 @@ const bodyparser = require("body-parser");
 const cors = require('cors')
 var jwt = require('jsonwebtoken');
 const User = require("./models/register");
-
+const port = process.env.PORT || 5000
 const DB="mongodb+srv://Team9:Team9@cluster0.6zc7y.mongodb.net/project1?retryWrites=true&w=majority";
 
 mongoose.connect(DB, {
@@ -73,4 +73,4 @@ app.use("/api/v1/get", (req, res, next) => {
 app.use("/api/v1", loginRoutes);
 app.use("/api/v1", orderRoutes);
 
-app.listen(5000, () => console.log("server is started"));
+app.listen(port, () => console.log("server is started"));
