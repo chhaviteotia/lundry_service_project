@@ -11,7 +11,6 @@ import Footer from "../footer/Footer";
 import { useHistory } from 'react-router-dom';
 import { setToken } from "../Auth";
 
-
 function Login (){
     // const navigate=useNavigate()
     const [user, setUser] = useState({
