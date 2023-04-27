@@ -18,7 +18,7 @@ function Pastorders() {
   
   const currToken = getToken()
   useEffect(() =>{
-    axios.get(`http://localhost:5000/api/v1/order`,{
+    axios.get(`https://laundry-service-backend.adaptable.app//api/v1/order`,{
       headers:{
         Authorization: 'test '+ currToken
       }
