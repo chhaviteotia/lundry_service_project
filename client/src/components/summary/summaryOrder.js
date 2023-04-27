@@ -22,7 +22,7 @@ function Summaryorder(props) {
     });
     console.log(data)
     await axios.post(
-      "https://laundry-service-backend.adaptable.app/api/v1/order",
+      "http://localhost:5000/api/v1/order",
       {
         orderDetails: data,
         address: "Hyderabad",

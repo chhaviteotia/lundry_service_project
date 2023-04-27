@@ -26,7 +26,11 @@ function Rowcomponent(props) {
   const currToken = getToken()
   const showSummaryHandler = () => {
     axios
+<<<<<<< HEAD
       .get(`https://laundry-service-backend.adaptable.app/api/v1/order/${props._id}`, {
+=======
+      .get(`https://laundry-service-backend.adaptable.app//api/v1/order/${props._id}`, {
+>>>>>>> d08620e52f667f7be02ec2cade627d0783d0cffa
         headers: {
           Authorization: "test " + currToken,
         },
@@ -51,7 +55,11 @@ function Rowcomponent(props) {
 
   const updateStatus = async () => {
     console.log(props._id)
+<<<<<<< HEAD
     await axios.put(`https://laundry-service-backend.adaptable.app/api/v1/order/${props._id}`, {}, {    
+=======
+    await axios.put(`https://laundry-service-backend.adaptable.app//api/v1/order/${props._id}`, {}, {    
+>>>>>>> d08620e52f667f7be02ec2cade627d0783d0cffa
         headers: {
           Authorization: "test " + currToken,
         },
