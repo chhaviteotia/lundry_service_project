@@ -23,11 +23,7 @@ function Register(){
     }
     const submitHandler = async (event)=>{
         event.preventDefault(event);
-<<<<<<< HEAD
-    const res= await axios.post("https://laundry-service-backend.adaptable.app/api/v1/register",user)
-=======
-    const res= await axios.post("https://laundry-service-backend.adaptable.app//api/v1/register",user)
->>>>>>> d08620e52f667f7be02ec2cade627d0783d0cffa
+    const res= await axios.post("http://localhost:5000/api/v1/register",user)
     console.log(res) 
     console.log(res.status)
     console.log(user)
